@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
 
 <head>
   <title>Runic Dev</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/public/css/output.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 
-<body>
-  {{ >header }}
-  <div id="test-htmx">
-    <div class="before">
-      Before
+<body class="relative h-full bg-[url('/public/images/aurora.jpg')] bg-cover">
+  <!-- <img src="/public/images/aurora.jpg" alt="The Northern Lights"> -->
+  <div class="h-full w-full absolute top-0 bg-gradient-to-b from-transparent to-60% to-black">
+    {{ >header }}
+    {{ >example }}
+    <div id="main-body" class="text-white">
+      home
     </div>
   </div>
-  <button hx-get="/test" hx-trigger="click" hx-target="#test-htmx" hx-swap="outerHTML">
-    Test Button
-  </button>
 </body>
 
 </html>

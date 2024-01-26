@@ -1,3 +1,19 @@
-<div>
-  <h1>Runic Dev</h1>
+<div class="transparent w-fill h-36 flex justify-between flex-col md:flex-row text-white">
+  <a href="/"><h1 class="p-5 text-white font-['Rubik'] font-bold flex-1 text-center md:text-left">runic_dev</h1></a>
+  <nav class="p-5 flex flex-row justify-center">
+    <li class="list-none px-5 cursor-pointer" hx-get="/projects" hx-trigger="click" hx-target="#main-body" hx-swap="innerHTML" hx-replace-url="true">projects</li>
+    <li class="list-none px-5 cursor-pointer" hx-get="/streaming" hx-trigger="click" hx-target="#main-body" hx-swap="innerHTML" hx-replace-url="true">streaming</li>
+    <li class="list-none px-5 cursor-pointer" hx-get="/blog" hx-trigger="click" hx-target="#main-body" hx-swap="innerHTML">blog</li>
+    <li class="list-none px-5 cursor-pointer" hx-get="/contact" hx-trigger="click" hx-target="#main-body" hx-swap="innerHTML">contact</li>
+  </nav>
 </div>
+  <!-- <img class="max-h-full filter invert opacity-50" src="/public/images/raido.png" alt="An R shaped rune"> -->
+  <!-- <nav class="justify-center"> -->
+  <!--   <ul class="flex flex-col md:flex-row justify-center text-center"> -->
+  <!--     <li class="flex-1">About</li> -->
+  <!--     <li class="flex-1">Experience</li> -->
+  <!--     <li class="flex-1">Streaming</li> -->
+  <!--     <li class="flex-1">Social</li> -->
+  <!--     <li class="flex-1">Contact</li> -->
+  <!--   </ul> -->
+  <!-- </nav> -->
