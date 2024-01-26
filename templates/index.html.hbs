@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Runic Dev</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/public/css/styles.css" type="text/css" rel="stylesheet">
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+
+<body>
+  {{ >header }}
+  <div id="test-htmx">
+    <div class="before">
+      Before
+    </div>
+  </div>
+  <button hx-get="/test" hx-trigger="click" hx-target="#test-htmx" hx-swap="outerHTML">
+    Test Button
+  </button>
+</body>
+
+</html>
